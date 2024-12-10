@@ -1,0 +1,108 @@
+.nacos{
+    width: 50px;
+    height: 50px;
+}
+
+.nacosunidel{
+    font-weight: 800;
+
+}
+
+.unidel{
+    width: 140px;
+    height: 40px;
+}
+
+.brand{
+    width: 224px;
+    height: 143px;
+    border-radius: 30px;
+}
+.contact li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.con{
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 15px;
+}
+.contact li a:hover{
+    color: #000;
+}
+.quickL li{
+    font-size: 18px;
+    letter-spacing: 12px;
+
+}
+
+.quickL{
+    border-bottom: 2px  solid #fff;
+    padding-right: 10px;
+}
+
+.links li a{
+    text-decoration: none;
+    color: #fff5f5;
+}
+
+.links li a:hover{
+    color: #000;
+}
+
+.footer{
+    background-color: #010124;
+}
+
+.footer{
+    padding-right: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.mainbrd{
+    padding: 20px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #010124;
+}
+
+.agb{
+    font-size: 14px;    
+}
+
+.hr{
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+}
+
+.uni{
+    font-weight: 600;
+    letter-spacing: 20px;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-500{
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:600px) {
+    .w-500{
+        width: 100%;
+    }
+    .mainbrd{
+        padding: 0;
+    }
+}
