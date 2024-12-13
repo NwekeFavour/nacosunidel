@@ -53,6 +53,39 @@
 
 .footer{
     background-color: #010124;
+    /* background-color: #4582ff; */
+}
+
+.read{
+    color: #4582ff;
+    letter-spacing: 10px;
+}
+
+.read:hover{
+    border-bottom: 1px solid #010124;
+}
+
+.me-md-8{
+    margin-right: 1.4rem;
+}
+
+.executives{
+    background-color: #e2e2e2;
+}
+
+.pres{
+    width: 250px;
+    height: 300px;
+}
+
+.presd{
+    font-size: 25px !important; 
+    text-align: center;
+}
+
+.executives .exe {
+    font-weight: 900;
+    font-size: 40px;
 }
 
 .footer{
@@ -97,12 +130,91 @@
     margin-bottom: 10px;
 }
 
+.imgplaceholder{
+    width: 100%;
+}
+
+.code{
+    width: 300px;
+    height: 500px;
+}
+
+.computing .wedo p{
+    font-size: 25px;
+}
+
+.computing .stud{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.seminars{
+    background: url('../assets//image/co-workspace_1.webp');
+    background-repeat: no-repeat;
+    height: 360px;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.seminars::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black; /* Background color */
+    opacity: 0.5;            /* 50% opacity */
+    z-index: -1;             /* Keep it behind the content */
+}
+
+.virtual{
+    font-size: 24px;
+}
+
+.elementor-size-default{
+    font-size: 30px;
+}
+
+.coming{
+    font-size: 15px;
+}
+
+.scholarships{
+    background: url('../assets/image/gradd.webp');
+    background-repeat: no-repeat;
+    height: 360px;
+    background-position: center;
+}
 
 @media screen and (max-width:600px) {
+    .computing .wedo p{
+        font-size: 20px;
+    }
+    .stud{
+        font-size: 20px !important;
+    }
+    .virtual{
+        font-size: 20px;
+    }
+    .elementor-size-default{
+        font-size: 20px;
+    }
+    .rows{
+        padding: 0 !important;
+    }
     .w-500{
         width: 100%;
     }
     .mainbrd{
         padding: 0;
+    }
+    .brd{
+        width: 100% !important;
+    }
+    .exe{
+        font-size: 30px !important;
+        line-height: 4rem;
     }
 }

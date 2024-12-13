@@ -14,7 +14,7 @@
 <template>
     <div class="footer">
         <div class="d-md-flex foots  justify-content-between">
-            <div class="w-md-50">
+            <div class="w-50 brd">
                 <div class="mainbrd">
                     <img class="brand" :src="Brand" alt="">
                 </div>
