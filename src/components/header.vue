@@ -29,7 +29,7 @@ export default {
           <img :src="Logo2" class="unidel" alt="Unidel">
         </div>
       </router-link>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse justify-content-end me-md-8 navbar-collapse" id="navbarSupportedContent">
@@ -38,19 +38,17 @@ export default {
             <router-link to="/" class="nav-link active" aria-current="page">Home</router-link>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <a class="nav-link text-black dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="true">
               More
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Action</a></li>
-              <li><a class="dropdown-item">Another action</a></li>
+              <li><a class="dropdown-item">Blogs</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item">Something else here</a></li>
+              <li><a class="dropdown-item">Past Questions</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <router-link to="/about-us" class="nav-link active" aria-current="page">About Us</router-link>
-
           </li>          
         </ul>
       </div>

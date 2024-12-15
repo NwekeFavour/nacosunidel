@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div class="footer">
+    <div class="footer bg-success">
         <div class="d-md-flex foots  justify-content-between">
             <div class="w-50 brd">
                 <div class="mainbrd">
@@ -45,7 +45,7 @@
                             <router-link to="/blog">Blog</router-link>
                         </li>
                         <li class="pb-3">
-                            <router-link to="/executive">Executive</router-link>
+                            <router-link to="/executives">Executive</router-link>
                         </li>
                     </ul>
                 </div>

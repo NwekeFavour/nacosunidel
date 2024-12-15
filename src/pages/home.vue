@@ -2,7 +2,7 @@
     import Header from '../components/header.vue';
     import Footer from '../components/footer.vue';
     import '../assets/styles.css'
-    import Image from '../assets/image/Image.svg'
+    import Image from '../assets/image/work1.webp'
     import Code from '../assets/image/code.webp'
     import Pres from '../assets/image/pres.webp'
     import Fin from '../assets/image/finsec.webp'
@@ -34,24 +34,16 @@
         <div>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item p-3 h-25 active">
+                    <div data-bs-interval="4000" class="carousel-item p-3 h-25 active">
                         <img :src="Image" class=" d-block imgplaceholder" alt="...">
                     </div>
-                    <div class="carousel-item p-3 h-25">
+                    <div data-bs-interval="4000" class="carousel-item p-3 h-25">
                         <img :src="Image" class=" d-block imgplaceholder" alt="...">
                     </div>
-                    <div class="carousel-item p-3 h-25">
+                    <div data-bs-interval="4000" class="carousel-item p-3 h-25">
                         <img :src="Image" class=" d-block imgplaceholder" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
             <div class="computing  mx-md-3 my-md-4">
                 <div class="wedo">
@@ -75,7 +67,7 @@
                                 <p class="m-0 text-capitalize coming text-white">next edition coming soon</p>
                             </div>
                             <div>
-                                <router-link to="/executives" class="d-flex text-decoration-none text-white flex-row align-items-center bg-success gap-2 rounded-sm px-3 py-2 border border-white border-solid"><p class="d-flex m-0 align-items-center gap-1 text-capitalize">register</p>
+                                <router-link to="/signup" class="d-flex text-decoration-none text-white flex-row align-items-center bg-success gap-2 rounded-sm px-3 py-2 border border-white border-solid"><p class="d-flex m-0 align-items-center gap-1 text-capitalize">register</p>
                                 </router-link>
                             </div>
                         </div>
@@ -111,7 +103,7 @@
                                 <p>The Nigerian Association of Computer Science Students (UNIDEL branch) is a dynamic group of students from the Department of Computer Science and Engineering at UNIDEL. The association is dedicated to enhancing the technical skills and social well-being of its members while fostering a strong connection between the academic environment and the computer industry.</p>
                                 <p>It comprises of students ranging from year 1 to year 5. We back backed up by 5 different staff advisers which see to and aid the operations of the association as well as provide adviser on matters beyond our control</p>
                             </div>
-                            <router-link to="/about-us" class="text-capitalize text-decoration-none read">read more</router-link>
+                            <router-link to="/about-us" class="text-capitalize text-decoration-none read text-success">read more</router-link>
                         </div>
                     </div>
                 </div>

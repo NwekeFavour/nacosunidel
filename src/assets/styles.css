@@ -8,6 +8,15 @@
 
 }
 
+.outline-none{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.w-md-25{
+    width: 25% !important;
+}
+
 .unidel{
     width: 140px;
     height: 40px;
@@ -48,7 +57,7 @@
 }
 
 .links li a:hover{
-    color: #000;
+    color: #015401;
 }
 
 .footer{
@@ -84,6 +93,11 @@
 }
 
 .executives .exe {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.executivess .exe {
     font-weight: 900;
     font-size: 40px;
 }
@@ -189,6 +203,11 @@
 }
 
 @media screen and (max-width:600px) {
+
+    .w-md-25{
+        width: 50% !important;
+    }
+    
     .computing .wedo p{
         font-size: 20px;
     }
