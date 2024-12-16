@@ -35,13 +35,13 @@
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div data-bs-interval="4000" class="carousel-item p-3 h-25 active">
-                        <img :src="Image" class=" d-block imgplaceholder" alt="...">
+                        <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
                     </div>
                     <div data-bs-interval="4000" class="carousel-item p-3 h-25">
-                        <img :src="Image" class=" d-block imgplaceholder" alt="...">
+                        <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
                     </div>
                     <div data-bs-interval="4000" class="carousel-item p-3 h-25">
-                        <img :src="Image" class=" d-block imgplaceholder" alt="...">
+                        <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <div class="container-fluid ">
                 <div class="row  d-flex m-5 justify-content-around">
                     <div class="col-lg-3  col-md-12 d-flex align-items-center justify-content-center">
-                        <img :src="Code" class="code" alt="">
+                        <img :src="Code" class="code" alt="code">
                     </div>
                     <div class="col-lg-6 rows col-md-12 col-sm-12  col-12 col-xs-12">
                         <div class="  mt-md-0 mt-3">
@@ -115,7 +115,7 @@
                 <div class="mx-auto row   d-lg-flex align-items-center  py-md-5 justify-content-center">
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="pres " :src="Pres" alt="">
+                            <img class="pres " :src="Pres" alt="presidents-img">
                         </div>
                         <div >
                             <!-- position -->
@@ -125,7 +125,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-12 my-md-0 my-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="pres" :src="Vice" alt="">
+                            <img class="pres" :src="Vice" alt="vp">
                         </div>
                         <div>
                             <p class="m-0 presd">Okonmah Raphael</p>
@@ -134,7 +134,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-12 my-md-3 my-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="pres" :src="Fin" alt="">
+                            <img class="pres" :src="Fin" alt="Finsec">
                         </div>
                         <div>
                             <p class="m-0 presd">Ifeanyi Sucess</p>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="pres" :src="ICT" alt="">
+                            <img class="pres" :src="ICT" alt="ICT_exco">
                         </div>
                         <div>
                             <p class="m-0 presd">Paul .C. Prescilia</p>

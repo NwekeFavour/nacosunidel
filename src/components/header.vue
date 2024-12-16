@@ -42,9 +42,9 @@ export default {
               More
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Blogs</a></li>
+              <li><router-link to="/blog" class="dropdown-item">Blogs</router-link></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item">Past Questions</a></li>
+              <li><router-link to="/past-questions" class="dropdown-item">Past Questions</router-link></li>
             </ul>
           </li>
           <li class="nav-item">

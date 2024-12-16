@@ -1,23 +1,16 @@
 <script >
     import Header from '../components/header.vue';
-    import Pres from '../assets/image/pres.webp'
-    import Fin from '../assets/image/finsec.webp'
-    import Vice from '../assets/image/vice.webp'
-    import ICT from '../assets/image/It.webp'
-import Footer from '../components/footer.vue';
+    import Footer from '../components/footer.vue';
 
     export default {
-        data() {
-            return {
-                Pres: Pres,
-                Fin: Fin,
-                Vice: Vice,
-                ICT, ICT
-            }
-        },
         components: {
             Header,
             Footer
+        },
+        computed: {
+            Executives() {
+                return this.$store.state.Executives || [];
+            }
         }
     }
 </script>
@@ -30,20 +23,20 @@ import Footer from '../components/footer.vue';
             <p>1st Nacos UNIDEL Chapter Executives </p> <p></p>
         </div>
         <div class="executivess">
-            <div class="mx-auto row   d-lg-flex align-items-center  py-md-5 justify-content-center">
-                <div class="col-lg-3 col-md-6 col-12">
+            <div class="mx-auto row py-4   d-lg-flex align-items-center  py-md-5 justify-content-center">
+                <div v-for="item in Executives" class="col-lg-3 col-md-6 col-12">
                     <div class="d-flex align-items-center justify-content-center">
-                        <img class="pres " :src="Pres" alt="">
+                        <img class="pres " :src="item.image" :alt="item.position"/>
                     </div>
-                    <div >
+                    <div>
                         <!-- position -->
-                        <p class="m-0 presd">Nweke favour Samuel</p>
+                        <p class="m-0 presd">{{item.name}}</p>
                     </div>
-                    <p class="m-0 text-center fw-semibold">President</p>
+                    <p class="m-0 text-center fw-semibold">{{item.position}}</p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 my-md-0 my-3">
+                <!-- <div class="col-lg-3 col-md-6 col-12 my-md-0 my-3">
                     <div class="d-flex align-items-center justify-content-center">
-                        <img class="pres" :src="Vice" alt="">
+                        <img class="pres" :src="Vice" alt="vp">
                     </div>
                     <div>
                         <p class="m-0 presd">Okonmah Raphael</p>
@@ -52,7 +45,7 @@ import Footer from '../components/footer.vue';
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 my-md-3 my-3">
                     <div class="d-flex align-items-center justify-content-center">
-                        <img class="pres" :src="Fin" alt="">
+                        <img class="pres" :src="Fin" alt="finsec">
                     </div>
                     <div>
                         <p class="m-0 presd">Ifeanyi Sucess</p>
@@ -61,13 +54,40 @@ import Footer from '../components/footer.vue';
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="d-flex align-items-center justify-content-center">
-                        <img class="pres" :src="ICT" alt="">
+                        <img class="pres" :src="Sec" alt="Secretary">
+                    </div>
+                    <div>
+                        <p class="m-0 presd">Amos Dominion</p>
+                    </div>
+                    <p class="m-0 text-center fw-semibold">Secretary</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="pres" :src="ICT" alt="ICT">
                     </div>
                     <div>
                         <p class="m-0 presd">Paul .C. Prescilia</p>
                     </div>
                     <p class="m-0 text-center fw-semibold">Asst. Secretary</p>
                 </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="pres" :src="DOS" alt="dos">
+                    </div>
+                    <div>
+                        <p class="m-0 presd">Oluchukwu .O. Divine</p>
+                    </div>
+                    <p class="m-0 text-center fw-semibold">Director of Socials</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="pres" :src="PRO" alt="pro">
+                    </div>
+                    <div>
+                        <p class="m-0 presd">Emmanuel .P. Chiemezie</p>
+                    </div>
+                    <p class="m-0 text-center fw-semibold">PRO</p>
+                </div> -->
             </div>
         </div>
         <Footer/>
