@@ -149,7 +149,7 @@
                             <p class="m-0 presd">Paul .C. Prescilia</p>
                         </div>
                         <p class="m-0 text-center fw-semibold">Asst. Secretary</p>
-                    </div>
+                    </div>   
                 </div>
                 <div class="d-flex justify-content-end p-md-2 p-4 align-items-center">
                     <router-link to="/executives" class="d-flex text-decoration-none text-black flex-row align-items-center gap-2 rounded-sm bg-white px-3 py-2 border border-white border-solid"><p class="d-flex m-0 align-items-center gap-1">See all executives</p>

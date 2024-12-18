@@ -45,9 +45,9 @@ export default {
               <li><router-link to="/blog" class="dropdown-item">Blogs</router-link></li>
               <li><hr class="dropdown-divider"></li>
               <li><router-link to="/past-questions" class="dropdown-item">Past Questions</router-link></li>
-              <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider"></li>   
               <li><router-link to="/events" class="dropdown-item">Events</router-link></li>
-            </ul>
+            </ul>  
           </li>
           <li class="nav-item">
             <router-link to="/about-us" class="nav-link active" aria-current="page">About Us</router-link>
