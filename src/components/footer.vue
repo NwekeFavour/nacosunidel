@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div class="footer bg-success">
+    <div class="footer ">
         <div class="d-md-flex foots  justify-content-between">
             <div class="w-50 brd">
                 <div class="mainbrd">
@@ -73,7 +73,7 @@
                 <p class="m-0 text-white con">Contact</p>
             </div>
             <div>
-                <ul class="list-unstyled pt-2 contact">
+                <ul class="list-unstyled links pt-2 contact">
                     <li>
                         <a class=" mb-3" href="mailto:nacosunidel@gmail.com">nacosunidel@gmail.com</a>
                     </li>
