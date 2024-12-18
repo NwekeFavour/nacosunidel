@@ -23,7 +23,7 @@ export default {
 <template>
   <nav class="navbar shadow w-100 navbar-expand-lg bg-white">
     <div class="container-fluid">
-      <router-link  class="d-flex align-items-center justify-content-between gap-3 ms-md-4 navbar-brand">
+      <router-link to="/" class="d-flex align-items-center justify-content-between gap-3 ms-md-4 navbar-brand">
         <img class="nacos" :src="Logo" alt="nacos_logo">
         <div>
           <img :src="Logo2" class="unidel" alt="Unidel">
