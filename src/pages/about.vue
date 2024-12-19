@@ -46,6 +46,9 @@
         <p class="m-0 text-secondary fs-3 fw-semibold">Departments</p>
       </div>
       <div class="dept-text-area my-md-2 my-3  d-flex align-items-center justify-content-center ">
+        <div class="mb-md-2">
+          <img class="w-md-25" :src="activeDepartment.brand" alt="">
+        </div>
         <p class="dept-title d-flex m-0 justify-content-start fw-bold">{{ activeDepartment.name }}</p>
         <p class="dept-info text-wrap mx-md-3 mx-2">{{ activeDepartment.info }}</p>
       </div>
@@ -58,17 +61,30 @@
 import { ref, computed } from 'vue';
 import Header from '../components/header.vue';
 import Footer from '../components/footer.vue';
+import Compsci from '../assets/image/comsci.svg'
+import Softwar from '../assets/image/soft.svg'
+import Info from '../assets/image/cyb.webp'
+import CYb from '../assets/image/info.svg'
+
 export default {
+  data() {
+    return {
+      Compsci: Compsci,
+      Softwar: Softwar,
+      Info: Info,
+      CYb: CYb
+    }
+  },
   components: {
     Header,
     Footer
   },
   setup() {
     const departments = [
-      { id: 1, code: 'CSC', name: 'Computer Science', info: 'The Department of Computer Science offers a comprehensive academic program focusing on the principles and practices of computing. From theoretical foundations to practical applications, students delve into algorithms, data structures, artificial intelligence, and more, preparing them for diverse career paths in technology.' },
-      { id: 2, code: 'SWE', name: 'Software Engineering', info: 'The Software Engineering department focuses on the systematic development and application of techniques for the creation of high-quality software systems. Students learn about software design, development, testing, and maintenance, equipping them with the skills needed in the software industry.' },
-      { id: 3, code: 'CYB', name: 'Cyber Security', info: 'The Cybersecurity department is dedicated to the study of protecting systems, networks, and programs from digital attacks. Students gain knowledge in areas such as cryptography, network security, and risk management, preparing them to safeguard information in various organizations.' },
-      { id: 4, code: 'LIS', name: 'Library and Information Science', info: 'The Library and Information Science department focuses on the management and dissemination of information. Students learn about information organization, digital libraries, and information retrieval systems, preparing them for careers in information management.' }
+      { id: 1, brand: Compsci, code: 'CSC', name: 'Computer Science', info: 'The Department of Computer Science offers a comprehensive academic program focusing on the principles and practices of computing. From theoretical foundations to practical applications, students delve into algorithms, data structures, artificial intelligence, and more, preparing them for diverse career paths in technology.' },
+      { id: 2, brand: Softwar, code: 'SWE', name: 'Software Engineering', info: 'The Software Engineering department focuses on the systematic development and application of techniques for the creation of high-quality software systems. Students learn about software design, development, testing, and maintenance, equipping them with the skills needed in the software industry.' },
+      { id: 3, brand: Info, code: 'CYB', name: 'Cyber Security', info: 'The Cybersecurity department is dedicated to the study of protecting systems, networks, and programs from digital attacks. Students gain knowledge in areas such as cryptography, network security, and risk management, preparing them to safeguard information in various organizations.' },
+      { id: 4, brand: CYb, code: 'LIS', name: 'Library and Information Science', info: 'The Library and Information Science department focuses on the management and dissemination of information. Students learn about information organization, digital libraries, and information retrieval systems, preparing them for careers in information management.' }
     ];
 
     const activeButton = ref(departments[0].id);

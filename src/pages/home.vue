@@ -32,15 +32,19 @@
     <div>
         <Header/>
         <div>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" class="carousel mb-md-3 mb-4 slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div data-bs-interval="4000" class="carousel-item p-3 h-25 active">
+                    <div data-bs-interval="3000" class="carousel-item  h-25 active">
+                        <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
+                         <div class="carousel-caption d-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item  h-25">
                         <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
                     </div>
-                    <div data-bs-interval="4000" class="carousel-item p-3 h-25">
-                        <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
-                    </div>
-                    <div data-bs-interval="4000" class="carousel-item p-3 h-25">
+                    <div data-bs-interval="3000" class="carousel-item  h-25">
                         <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
                     </div>
                 </div>
