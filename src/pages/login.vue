@@ -14,18 +14,18 @@ export default {
     <div>
         <Header/>
         <div>
-            <div class="ps-md-3 pt-md-4">
+            <div class="ps-md-3 pt-3 ps-2 pt-md-4">
                 <p class="m-0 text-black fw-bold  fs-2">LOGIN</p>
             </div>
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 my-md-4 mx-auto">
+                    <div class="col-md-6 my-md-4 my-3 mx-auto">
                         <form>
                             <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Matric Number / Student ID</label>
                               <input required type="email" class="form-control w-full" id="exampleInputEmail1" aria-describedby="emailHelp">
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                              <div id="vitals" class="form-text">We'll never share your details with anyone else.</div>
                             </div>
                             <div class="mb-3">
                               <label for="exampleInputPassword1" class="form-label">Password</label>

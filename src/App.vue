@@ -17,7 +17,7 @@ export default {
     this.$router.afterEach(() => {
       setTimeout(() => {
         this.loading = false; 
-      }, 3000); 
+      }, 5000); 
     });
   },
 };
