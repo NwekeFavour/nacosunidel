@@ -6,6 +6,7 @@ body {
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
+        "wdth" 100;
     background-color: #fff5f5;
 }
 
@@ -18,6 +19,7 @@ body {
     font-weight: 800;
 
 }
+
 
 * {
     margin: 0;
@@ -166,61 +168,6 @@ h1 {
      width: 100%;
      text-align: center;
  }
-
-
-/* STYLES FOR THE EVENTS PAGE STARTS HERE */
-.events-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.events-img{
-    width: 30%;    
-}
-.events-holder{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 250px;
-    margin-bottom: 20px;
-    background: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: center;
-}
-.upcoming-events-btn{
-    width: fit-content;
-    padding: 12px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    color: white;
-    background: #010124;
-    border: 1px solid white;
-}
-.no-events-txt{
-    font-size: 20px;
-    color: white;
-}
-.more-info{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .events-img{
-        width: 80%;
-        margin-top: 20px;    
-    }
-    .page-info{
-        text-align: center;
-    }
-}
-
-/* STYLES FOR THE EVENTS PAGE ENDS HERE */
-
 
 @media (max-width: 768px) {
     .dept-nav-buttons{
@@ -475,6 +422,7 @@ h1 {
     font-size: 24px;
 }
 
+
 .elementor-size-default{
     font-size: 30px;
 }
@@ -488,6 +436,64 @@ h1 {
     background-repeat: no-repeat;
     height: 360px;
     background-position: center;
+}
+
+
+/* STYLES FOR THE EVENTS PAGE STARTS HERE */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-img {
+    width: 30%;
+}
+
+.events-holder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-events-btn {
+    width: fit-content;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    color: white;
+    background: #010124;
+    border: 1px solid white;
+}
+
+.no-events-txt {
+    font-size: 20px;
+    color: white;
+}
+
+.more-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .events-img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .page-info {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:600px) {
