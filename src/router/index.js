@@ -4,7 +4,8 @@ import About from "../pages/about.vue";
 import Executives from "../pages/executives.vue";
 import Login from "../pages/login.vue";
 import Signup from "../pages/signup.vue";
-import Error from '../components/404page.vue'
+import Error from '../components/404page.vue';
+import Events from '../pages/events.vue';
 
 const routes = [
     {
@@ -17,6 +18,11 @@ const routes = [
         path: '/about-us',
         name: 'About',
         component: About
+    },
+    {
+        path: '/events',
+        name: 'Events',
+        component: Events
     },
     {
         path: '/executives',
