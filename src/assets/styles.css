@@ -381,6 +381,7 @@ h1 {
 
 .imgplaceholder{
     width: 100%;
+    height: 700px;
 }
 
 .code{
@@ -418,10 +419,18 @@ h1 {
     z-index: -1;             /* Keep it behind the content */
 }
 
+
 .virtual{
     font-size: 24px;
 }
-
+.btn-carousel{
+    background-color: #010124;
+    color: #fff5f5;
+}
+.btn-carousel:hover{
+    background-color: #fff5f5;
+    color: #000;
+}
 
 .elementor-size-default{
     font-size: 30px;
@@ -497,7 +506,19 @@ h1 {
 }
 
 @media screen and (max-width:600px) {
-
+    .imgplaceholder{
+        height: 400px;
+    }
+    .carousel-caption{
+        bottom: 6rem;
+    }
+    .carousel-caption h5{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .carousel-caption p{
+        font-size: 14px;
+    }
     .w-md-25{
         width: 50% !important;
     }
@@ -529,5 +550,14 @@ h1 {
     .exe{
         font-size: 30px !important;
         line-height: 4rem;
+    }
+}
+
+@media screen and (min-width:1270px) {
+    .carousel-caption{
+        bottom: 18rem !important;
+    }
+    .carousel-caption h5{
+        font-size: 60px;
     }
 }

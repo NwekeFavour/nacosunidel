@@ -8,7 +8,8 @@
     import Fin from '../assets/image/finsec.webp'
     import Vice from '../assets/image/vice.webp'
     import ICT from '../assets/image/It.webp'
-
+    import Aos from 'aos';
+    import 'aos/dist/aos.css'
 
     export default {
         data() {
@@ -24,6 +25,9 @@
         components: {
             Header,
             Footer
+        },
+        mounted() {
+            AOS.init()        
         }
     }
 </script>
@@ -36,9 +40,29 @@
                 <div class="carousel-inner">
                     <div data-bs-interval="3000" class="carousel-item  h-25 active">
                         <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
-                         <div class="carousel-caption d-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                        <div data-aos="fade-up" class="carousel-caption d-block">
+                            <h5 class="mb-3">Welcome to NACOS UNIDEL</h5>
+                            <p>From Turing Machines to the metaverse, A Journey throught the evolution of computing.</p>
+                            <div class="d-flex align-items-center gap-4 justify-content-center">
+                                <div class="">
+                                    <router-link
+                                        id=""
+                                        class="btn py-md-3 py-2 px-4 rounded-4 px-md-5 btn-carousel"
+                                        to="/about-us"
+                                        role="button"
+                                        >About</router-link
+                                    >                                    
+                                </div>
+                                <div class="">
+                                    <router-link
+                                        id=""
+                                        class="btn rounded-4 py-2 px-4 py-md-3 px-md-5 btn-carousel"
+                                        to="/login"
+                                        role="button"
+                                        >Login</router-link
+                                    > 
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-bs-interval="3000" class="carousel-item  h-25">
