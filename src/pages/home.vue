@@ -27,14 +27,15 @@
             Footer
         },
         mounted() {
-            AOS.init()        
+            Aos.init()        
         }
     }
 </script>
-
+    
 <template>
     <div>
-        <Header/>
+        <Header
+        :isAuthenticated="isAuthenticated"/>
         <div>
             <div id="carouselExampleAutoplaying" class="carousel mb-md-3 mb-4 slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
