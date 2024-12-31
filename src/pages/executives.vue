@@ -20,7 +20,7 @@
         <Header/>
         <div class="section-title border-2 border-start m-3  ps-3 border-success mb-75">
             <h2 class="fw-bold">MEET THE <span class="text-success fw-semibold">TEAM</span></h2>
-            <p>1st Nacos UNIDEL Chapter Executives </p> <p></p>
+            <p>1st NACOS UNIDEL Chapter Executives </p> <p></p>
         </div>
         <div class="executivess">
             <div class="mx-auto row py-4   d-lg-flex align-items-center  py-md-5 justify-content-center">
