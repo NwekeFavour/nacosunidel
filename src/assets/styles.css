@@ -221,6 +221,74 @@ h1 {
 
 /* STYLES FOR THE EVENTS PAGE ENDS HERE */
 
+/* STYLES FOR THE BLOG PAGE START BELOW HERE */
+
+.blog-container{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../assets/image/blog-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-intro{
+    color: #15155f;
+    font-weight: bolder;
+    font-size: 20px;
+    /* -webkit-text-stroke: 0.5px rgb(132, 142, 177); */
+    background-color: white;
+    padding: 0 8px;
+}
+.blog-header{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 10px;
+}
+.blog-header span{
+    font-size: 30px;
+}
+.blog-det{
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+.blog-input-tab{
+    display: flex;
+    height: 35px;
+    background: white;
+    width: min-content;
+    /* border-radius: 20px 0px 0px 20px; */
+    border: 1px solid white;
+}
+.blog-input-tab input{
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.blog-input-tab button{
+    height: 100%;
+    background: #010124;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding: 2px 12px;
+    border-radius: 0px 0px 0px 20px;
+    border: 2px solid white;
+}
+@media (max-width: 768px) {
+    .blog-header{
+        font-size: 2rem;
+    }
+}
+/* STYLES FOR THE BLOG PAGE ENDS ABOVE HERE */
+
 
 @media (max-width: 768px) {
     .dept-nav-buttons{

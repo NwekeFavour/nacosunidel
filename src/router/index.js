@@ -6,6 +6,7 @@ import Login from "../pages/login.vue";
 import Signup from "../pages/signup.vue";
 import Error from '../components/404page.vue';
 import Events from '../pages/events.vue';
+import Blog from '../pages/blog.vue';
 
 const routes = [
     {
@@ -23,6 +24,11 @@ const routes = [
         path: '/events',
         name: 'Events',
         component: Events
+    },
+    {
+        path: '/blog',
+        name: 'Blog',
+        component: Blog
     },
     {
         path: '/executives',

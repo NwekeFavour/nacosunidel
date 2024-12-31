@@ -137,7 +137,7 @@
                             <img class="pres" :src="Fin" alt="Finsec">
                         </div>
                         <div>
-                            <p class="m-0 presd">Ifeanyi Sucess</p>
+                            <p class="m-0 presd">Ifeanyi Success</p>
                         </div>
                         <p class="m-0 text-center fw-semibold">Treasurer</p>
                     </div>
@@ -146,7 +146,7 @@
                             <img class="pres" :src="ICT" alt="ICT_exco">
                         </div>
                         <div>
-                            <p class="m-0 presd">Paul .C. Prescilia</p>
+                            <p class="m-0 presd">Paul .C. Priscilla</p>
                         </div>
                         <p class="m-0 text-center fw-semibold">Asst. Secretary</p>
                     </div>   
