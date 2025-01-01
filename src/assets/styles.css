@@ -365,7 +365,9 @@ h1 {
    
 }
 /* STYLES FOR THE BLOG PAGE ENDS ABOVE HERE */
-
+.nacosUni{
+    color: #010124;
+}
 
 @media (max-width: 768px) {
     .blog-header {

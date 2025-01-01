@@ -72,7 +72,8 @@ export default {
       <router-link to="/" class="d-flex align-items-center justify-content-between gap-3 ms-md-4 navbar-brand">
         <img class="nacos" :src="Logo" alt="nacos_logo"> 
         <div>
-          <!-- <img :src="Logo2" class="unidel" alt="Unidel"> -->
+          <!-- <p class="m-0 nacosUni">NACOS UNIDEL</p> -->
+          <img :src="Logo2" class="unidel" alt="Unidel">
         </div>
       </router-link>
       <button class="navbar-toggler outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

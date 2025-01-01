@@ -10,6 +10,9 @@
         computed: {
             Executives() {
                 return this.$store.state.Executives || [];
+            },
+            StudentsRep() {
+                return this.$store.state.StudentExecutives || []
             }
         }
     }
@@ -17,16 +20,17 @@
 
 <template>
     <div>
-        <Header/>
+        <Header />
         <div class="section-title border-2 border-start m-3  ps-3 border-success mb-75">
             <h2 class="fw-bold">MEET THE <span class="text-success fw-semibold">TEAM</span></h2>
-            <p>1st NACOS UNIDEL Chapter Executives </p> <p></p>
+            <p>1st NACOS UNIDEL Chapter Executives </p>
+            <p></p>
         </div>
         <div class="executivess">
             <div class="mx-auto row py-4   d-lg-flex align-items-center  py-md-5 justify-content-center">
                 <div v-for="item in Executives" class="col-lg-3 col-md-6 col-12">
                     <div class="d-flex align-items-center justify-content-center">
-                        <img class="pres " :src="item.image" :alt="item.position"/>
+                        <img class="pres " :src="item.image" :alt="item.position" />
                     </div>
                     <div>
                         <!-- position -->
@@ -34,6 +38,7 @@
                     </div>
                     <p class="m-0 text-center fw-semibold">{{item.position}}</p>
                 </div>
+
                 <!-- <div class="col-lg-3 col-md-6 col-12 my-md-0 my-3">
                     <div class="d-flex align-items-center justify-content-center">
                         <img class="pres" :src="Vice" alt="vp">
@@ -89,9 +94,25 @@
                     <p class="m-0 text-center fw-semibold">PRO</p>
                 </div> -->
             </div>
+            <div class="section-title border-2 border-start m-3  ps-3 border-success mb-75">
+                <h3 class="fw-bold">MEET THE <span class="text-success fw-semibold">STUDENT LEGISLATIVE </span>COUNCIL
+                </h3>
+            </div>
+                <div class="mx-auto row py-4   d-lg-flex align-items-center  py-md-5 justify-content-center">
+                    <div v-for="item in StudentsRep" class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="pres " :src="item.image" :alt="item.position" />
+                        </div>
+                        <div>
+                            <!-- position -->
+                            <p class="m-0 presd">{{ item.name }}</p>
+                        </div>
+                        <p class="m-0 text-center fw-semibold">{{ item.position }}</p>
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </div>
-        <Footer/>
-    </div>
 </template>
 
 <style>

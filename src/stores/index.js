@@ -6,6 +6,8 @@ import ICT from '../assets/image/It.webp';
 import Sec from '../assets/image/sec.webp';
 import DOS from '../assets/image/dos.webp';
 import PRO from '../assets/image/pro.webp';
+import Josh from '../assets/image/joshua.webp';
+import Favour from '../assets/image/Amaechi.webp';
 
 export default createStore({
   state: {
@@ -18,5 +20,9 @@ export default createStore({
       { image: Fin, id: 5, position: "Financial Secretary", name: "Ifeanyi Success" },
       { image: PRO, id: 6, position: "PRO", name: "Emmanuel .P. Chiemezie" },
     ],
+    StudentExecutives: [
+      { image: Josh, id: 0, position: "Faculty Rep", name: "DAIGBE JOSHUA" },
+      { image: Favour, id: 1, position: "Faculty Rep, Deputy Clerk", name: "Amaechi .U. Favour" }
+    ]
   },
 });

@@ -34,7 +34,9 @@ export default {
           fname: this.fname,
           lname: this.lname,
           matric_number: this.matric_number,
-          password: this.password,
+              password: this.password,
+
+              
           password_confirmation: this.password_confirmation
         });
           console.log('Registration successful:', response.data);
