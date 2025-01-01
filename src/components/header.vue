@@ -6,8 +6,10 @@
 // })
 
 import axios from 'axios';
-import Logo from '../assets/image/logo.webp'
 import LogoUnidel from '../assets/image/logo_2.webp'
+import Logo from '../assets/image/new-main-logo.webp'
+// import LogoUnidel from '../assets/image/logo_2.webp'
+  
   import '../assets/styles.css'
 export default {
   data() {
@@ -19,6 +21,7 @@ export default {
       isSpecialAdmin: localStorage.getItem('isSpecialAdmin') === 'true',  // To check for special admin
 
       
+      // Logo2: LogoUnidel
     }
   },
   methods: {
@@ -60,15 +63,16 @@ export default {
 
 }
 
+
 </script>
 
 <template>
-  <nav class="navbar shadow w-100 navbar-expand-lg bg-white">
+  <nav class="navbar shadow w-100 navbar-expand-lg bg-transparent">
     <div class="container-fluid">
       <router-link to="/" class="d-flex align-items-center justify-content-between gap-3 ms-md-4 navbar-brand">
-        <img class="nacos" :src="Logo" alt="nacos_logo">
+        <img class="nacos" :src="Logo" alt="nacos_logo"> 
         <div>
-          <img :src="Logo2" class="unidel" alt="Unidel">
+          <!-- <img :src="Logo2" class="unidel" alt="Unidel"> -->
         </div>
       </router-link>
       <button class="navbar-toggler outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <Header />
     <div class="about-container">
       <div class="top-image">
         <h2>UNIDEL</h2>
@@ -21,23 +21,17 @@
           real-world insights.
         </p>
       </div>
-      </div>
-      <div class="departments-section">
-        <h1>Our Departments</h1>
-      </div>
+    </div>
+    <div class="departments-section">
+      <h1>Our Departments</h1>
+    </div>
     <div class="departments-nav ">
-      <div
-        v-for="dept in departments"
-        :key="dept.id"
-        class="dept-nav-holder "
-      >
-        <button
-          @click="setActiveButton(dept.id)"
-          :class="{'active-button': activeButton === dept.id, 'inactive-button': activeButton !== dept.id}"
-          class="dept-nav-buttons"
-        >
+      <div v-for="dept in departments" :key="dept.id" class="dept-nav-holder ">
+        <button @click="setActiveButton(dept.id)"
+          :class="{ 'active-button': activeButton === dept.id, 'inactive-button': activeButton !== dept.id }"
+          class="dept-nav-buttons">
         </button>
-          {{ dept.code }}
+        {{ dept.code }}
 
       </div>
     </div>
@@ -54,7 +48,7 @@
       </div>
     </div>
   </div>
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
@@ -107,16 +101,16 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style >
 .active-button {
-  background-color: #010124; /* Active background color */
+  background-color: #010124;
+  /* Active background color */
   color: white;
 }
 
 .inactive-button {
-  background-color: #f8f9fa; /* Inactive background color */
+  background-color: #f8f9fa;
+  /* Inactive background color */
   color: black;
 }
-
 </style>

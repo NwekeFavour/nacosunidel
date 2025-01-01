@@ -7,7 +7,7 @@ export default {
     data() {
         return {
             Loader: true,
-            ditts: false,
+            ditts: true,
             fname: '',
             lname: '',
             matric_number: '',
@@ -30,7 +30,7 @@ export default {
         this.Loader = false
 
       try {
-        const response = await axios.post('http://127.0.0.1:8000/api/register', {
+          const response = await axios.post('http://127.0.0.1:8000/api/register', {
           fname: this.fname,
           lname: this.lname,
           matric_number: this.matric_number,
