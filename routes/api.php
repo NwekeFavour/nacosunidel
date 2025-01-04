@@ -11,8 +11,8 @@ Route::middleware('auth:sanctum')->put('user', [UserController::class, 'updatePr
 Route::middleware('auth:sanctum')->delete('user', [UserController::class, 'destroy']);
 Route::middleware('auth:sanctum')->post('/logout', [UserController::class, 'logout']);
 
-
+   
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
 // })->middleware('auth:sanctum');
-
+     
