@@ -13,7 +13,7 @@ export default {
             matric_number: '',
             password: '',
             rememberMe: false,
-            apiUrl: 'http://127.0.0.1:8000/api/login', // Replace with your API endpoint,
+            apiUrl: 'https://api.importcustom.org/api/login', // Replace with your API endpoint,
             isAuthenticated: true,
             isAuth:true,
             Loader: true,
