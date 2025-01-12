@@ -34,7 +34,7 @@ export default {
 
       try {
         // Send logout request to backend
-        await axios.post('http://127.0.0.1:8000/api/logout', {}, {
+        await axios.post('https://api.importcustom.org/api/logout', {}, {
           headers: {
             Authorization: `Bearer ${token}`,
           }
