@@ -13,6 +13,9 @@
             },
             StudentsRep() {
                 return this.$store.state.StudentExecutives || []
+            },
+            StaffsAdvisers() {
+                return this.$store.state.StaffsAdvisers || []
             }
         }
     }
@@ -98,21 +101,37 @@
                 <h3 class="fw-bold">MEET THE <span class="text-success fw-semibold">STUDENT LEGISLATIVE </span>COUNCIL
                 </h3>
             </div>
-                <div class="mx-auto row py-4   d-lg-flex align-items-center  py-md-5 justify-content-center">
-                    <div v-for="item in StudentsRep" class="col-lg-3 col-md-6 col-12">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img class="pres " :src="item.image" :alt="item.position" />
-                        </div>
-                        <div>
-                            <!-- position -->
-                            <p class="m-0 presd">{{ item.name }}</p>
-                        </div>
-                        <p class="m-0 text-center fw-semibold">{{ item.position }}</p>
+            <div class="mx-auto row py-4   d-lg-flex align-items-center  py-md-5 justify-content-center">
+                <div v-for="item in StudentsRep" class="col-lg-3 col-md-6 col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="pres " :src="item.image" :alt="item.position" />
                     </div>
+                    <div>
+                        <!-- position -->
+                        <p class="m-0 presd">{{ item.name }}</p>
+                    </div>
+                    <p class="m-0 text-center fw-semibold">{{ item.position }}</p>
                 </div>
             </div>
-            <Footer />
+            <div class="section-title border-2 border-start m-3  ps-3 border-success mb-75">
+                <h3 class="fw-bold">MEET THE <span class="text-success fw-semibold">STAFF ADVISERS </span>
+                </h3>
+            </div>
+            <div class="mx-auto row py-4   d-lg-flex align-items-center  py-md-5 justify-content-center">
+                <div v-for="item in StaffsAdvisers" class="col-lg-3 col-md-6 col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="pres " :src="item.image" :alt="item.position" />
+                    </div>
+                    <div>
+                        <!-- position -->
+                        <p class="m-0 presd">{{ item.name }}</p>
+                    </div>
+                    <p class="m-0 text-center fw-semibold">{{ item.position }}</p>
+                </div>
+            </div>
         </div>
+        <Footer />
+    </div>
 </template>
 
 <style>

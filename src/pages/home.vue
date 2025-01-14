@@ -129,7 +129,7 @@
                         <div class="  mt-md-0 mt-3">
                             <h3>About Us</h3>
                             <div class="content mt-md-0 mt-2">
-                                <p>The Nigerian Association of Computing Students (UNIDEL chapter) is a dynamic group of students from the Department of Computer Science and Engineering at UNIDEL. The association is dedicated to enhancing the technical skills and social well-being of its members while fostering a strong connection between the academic environment and the computer industry.</p>
+                                <p>The Nigerian Association of Computing Students (UNIDEL chapter) is a dynamic group of students from the Faculty of Computing at UNIDEL. The association is dedicated to enhancing the technical skills and social well-being of its members while fostering a strong connection between the academic environment and the computer industry.</p>
                                 <p>It comprises of students ranging from year 1 to year 5. We back backed up by 5 different staff advisers which see to and aid the operations of the association as well as provide adviser on matters beyond our control</p>
                             </div>
                             <router-link to="/about-us" class="text-capitalize text-decoration-none read text-success">read more</router-link>
