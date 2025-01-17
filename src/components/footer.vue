@@ -20,7 +20,7 @@
                 </div>
                 <div class="w-500">
                     <p class="m-0 text-white ">
-                        The Nigeria association of computing students UNIDEL chapter is an association of vibrant students of the faculty of computer science and the department of computer engineering , aimed at improving the technical and social well being of her members and bridge the gap between the academic environment and computer industry.
+                        The Nigeria association of computing students UNIDEL chapter is an association of vibrant students of the faculty of computing and the department of computer engineering , aimed at improving the technical and social well being of her members and bridge the gap between the academic environment and computer industry.
                     </p>
                 </div>
             </div>
@@ -75,7 +75,7 @@
             <div>
                 <ul class="list-unstyled links pt-2 contact">
                     <li>
-                        <a class=" mb-3" href="mailto:nacosunidel@gmail.com">nacosunidel@gmail.com</a>
+                        <a class=" mb-3" href="mailto:nacos@unidel.edu.ng">nacos@unidel.edu.ng</a>
                     </li>
                 </ul>
             </div>

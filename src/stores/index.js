@@ -31,7 +31,7 @@ export default createStore({
     StaffsAdvisers: [
       { image: DrOkpako, id: 0, position: "Dean, Faculty Of Computing", name: "Dr. Okpako Abugor" },
       { image: XHOD, id: 1, position: "Student Adviser", name: "Mr D.O. Okeh" },
-      { image: MrsDeborah, id: 2, position: "HOD of Software Engineering", name: "" },
+      { image: MrsDeborah, id: 2, position: "HOD of Software Engineering", name: "Mrs D.O Ojie" },
       { image: MrsMughele, id: 3, position: "HOD of Cyber Security", name: "Dr. (Mrs) E.S. Mughele" }
     ]
   },
