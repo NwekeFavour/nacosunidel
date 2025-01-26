@@ -71,7 +71,7 @@
                         <img :src="Groupie" class=" d-block imgplaceholder" alt="img_carousel">
                         <div class="carousel-caption welcome d-block">
                             <h5>Welcome To NACOS UNIDEL</h5>
-                            <p>NACOS is a computing department in Bowen University that leverages on effective learning
+                            <p class="text-dark">NACOS is a computing department in Bowen University that leverages on effective learning
                                 through advance technology and tools.
                             </p>
                         </div>
