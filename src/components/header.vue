@@ -48,6 +48,8 @@ export default {
               <li><router-link to="/past-questions" class="dropdown-item">Past Questions</router-link></li>
               <li><hr class="dropdown-divider"></li>   
               <li><router-link to="/events" class="dropdown-item">Events</router-link></li>
+              <li><hr class="dropdown-divider"></li>   
+              <li><router-link to="/help" class="dropdown-item">Help</router-link></li>
             </ul>  
           </li>
           <li class="nav-item">

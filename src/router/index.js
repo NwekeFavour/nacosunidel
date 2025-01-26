@@ -7,6 +7,7 @@ import Signup from "../pages/signup.vue";
 import Error from '../components/404page.vue';
 import Events from '../pages/events.vue';
 import Blog from '../pages/blog.vue';
+import Help from '../pages/help.vue';
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: '/events',
         name: 'Events',
         component: Events
+    },
+    {
+        path: '/help',
+        name: 'Help',
+        component: Help
     },
     {
         path: '/blog',
