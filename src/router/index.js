@@ -7,7 +7,7 @@ import Signup from "../pages/signup.vue";
 import Error from '../components/404page.vue';
 import Events from '../pages/events.vue';
 import Blog from '../pages/blog.vue';
-import Dashboard from '../pages/dashboard.vue';
+import Help from '../pages/help.vue';
 
 const routes = [
     {
@@ -25,6 +25,11 @@ const routes = [
         path: '/events',
         name: 'Events',
         component: Events
+    },
+    {
+        path: '/help',
+        name: 'Help',
+        component: Help
     },
     {
         path: '/blog',
@@ -51,15 +56,15 @@ const routes = [
         name: '404',
         component: Error
     },
-    {
-        path: '/dashboard',
-        name: "Dashboard",
-        component: Dashboard,
-        meta: {
-            requiresAuth: true,  // This meta field will indicate the need for authentication
-            requiresSpecialAdmin: true, // Only special admins can access
-        },
-    }
+    // {
+    //     path: '/dashboard',
+    //     name: "Dashboard",
+    //     component: Dashboard,
+    //     meta: {
+    //         requiresAuth: true,  // This meta field will indicate the need for authentication
+    //         requiresSpecialAdmin: true, // Only special admins can access
+    //     },
+    // }
 ];
 
 const router = createRouter({

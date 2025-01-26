@@ -725,6 +725,10 @@ h1 {
 }
 
 @media screen and (max-width:600px) {
+    .faq{
+        width: 90% !important;
+        margin: 20px;
+    }
     .imgplaceholder{
         height: 400px;
     }
