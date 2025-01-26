@@ -2,8 +2,9 @@
     import Header from '../components/header.vue';
     import Footer from '../components/footer.vue';
     import '../assets/styles.css'
-    import Image from '../assets/image/work1.webp'
-    import Code from '../assets/image/code.webp'
+    import Image from '../assets/image/groupspics.webp'
+    import ImageTwo from '../assets/image/secongroupspics.jpg'
+    import Code from '../assets/image/new-main-logo.webp'
     import Pres from '../assets/image/pres.webp'
     import Fin from '../assets/image/finsec.webp'
     import Vice from '../assets/image/vice.webp'
@@ -15,6 +16,7 @@
         data() {
             return {
                 Image: Image,
+                ImageTwo: ImageTwo,
                 Code: Code,
                 Pres: Pres,
                 Vice : Vice,
@@ -39,9 +41,9 @@
         <div>
             <div id="carouselExampleAutoplaying" class="carousel mb-md-3 mb-4 slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div data-bs-interval="3000" class="carousel-item  h-25 active">
+                    <div data-bs-interval="2000" class="carousel-item  h-25 active">
                         <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
-                        <div data-aos="fade-up" class="carousel-caption d-block">
+                        <div data-aos="fade-up" class="carousel-caption welcome d-block">
                             <h5 class="mb-3">Welcome to NACOS UNIDEL</h5>
                             <p>From Turing Machines to the metaverse, A Journey throught the evolution of computing.</p>
                             <div class="d-flex align-items-center gap-4 justify-content-center">
@@ -66,11 +68,11 @@
                             </div>
                         </div>
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item  h-25">
+                    <div data-bs-interval="2000" class="carousel-item  h-25">
                         <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item  h-25">
-                        <img :src="Image" class=" d-block imgplaceholder" alt="img_carousel">
+                    <div data-bs-interval="2000" class="carousel-item  h-25">
+                        <img :src="ImageTwo" class=" d-block imgplaceholder" alt="img_carousel">
                     </div>
                 </div>
             </div>

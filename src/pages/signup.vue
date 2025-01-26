@@ -62,7 +62,7 @@ export default {
 <template>
     <div>
         <div v-if="ditts">
-            <Header/>
+            <Header />
             <div class="ps-md-3 pt-3 ps-2 pb-md-0 pb-2 pt-md-4">
                 <p class="m-0 text-black fw-bold  fs-2">BECOME A MEMBER</p>
             </div>
@@ -75,32 +75,46 @@ export default {
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="fname" class="form-label">First name</label>
-                                        <input v-model="fname" required type="text" class="form-control w-full" id="fname" aria-describedby="fname">
+                                        <input v-model="fname" required type="text" class="form-control w-full"
+                                            id="fname" aria-describedby="fname">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="lname" class="form-label">Last name</label>
-                                        <input v-model="lname" required type="text" class="form-control w-full" id="lname" aria-describedby="lname">
+                                        <input v-model="lname" required type="text" class="form-control w-full"
+                                            id="lname" aria-describedby="lname">
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Matric Number / Student ID</label>
-                              <input @input="validateMatricNumber" v-model="matric_number" required type="text" class="form-control w-full" id="matric" aria-describedby="matricHelp">
+                                <label for="exampleInputEmail1" class="form-label">Matric Number / Student ID</label>
+                                <input @input="validateMatricNumber" v-model="matric_number" required type="text"
+                                    class="form-control w-full" id="matric" aria-describedby="matricHelp">
                                 <p v-if="error" style="color: red;">{{ error }}</p>
 
-                              <div id="matricHelp" class="form-text">We'll never share your details with anyone else.</div>
+                                <div id="matricHelp" class="form-text">We'll never share your details with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="exampleInputClub" class="form-label">Choose Club</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select Club of Preference</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input v-model="password" required type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input v-model="password" required type="password" class="form-control"
+                                    id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
                                 <label for="confirmpassword" class="form-label">Confirm Password</label>
                                 <input v-model="password_confirmation
                                     " required type="password" class="form-control" id="confirmpassword">
-                              </div>
+                            </div>
                             <div class="mb-5 form-check">
                                 <input required type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remember me</label>
@@ -118,11 +132,11 @@ export default {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
 
         </div>
         <div v-else>
-            <Error/>
+            <Error />
         </div>
     </div>
 </template>

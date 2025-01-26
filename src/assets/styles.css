@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
 body {
-    font-family: "Noto Sans", serif;
+    /* font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 600; */
+    font-family: "Viga", serif;
+        font-weight: 400;
+        font-style: normal;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -131,7 +134,6 @@ body {
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -590,7 +592,7 @@ h1 {
 
 .code{
     width: 300px;
-    height: 500px;
+    height: 300px;
 }
 
 .computing .wedo p{
@@ -603,10 +605,11 @@ h1 {
 }
 
 .seminars{
-    background: url('../assets//image/co-workspace_1.webp');
+    background: url('../assets/image/secongroupspics.jpg');
     background-repeat: no-repeat;
     height: 360px;
     background-position: center;
+    background-size: cover;
     position: relative;
     z-index: 1;
 }
@@ -649,6 +652,10 @@ h1 {
     background-repeat: no-repeat;
     height: 360px;
     background-position: center;
+}
+
+.welcome h5{
+    font-size: 40px;
 }
 
 
@@ -707,6 +714,14 @@ h1 {
     .page-info {
         text-align: center;
     }
+    .code{
+        width: 200px;
+        height: 300px;
+    }
+    .welcome h5{
+        font-size: 40px;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -716,6 +731,11 @@ h1 {
     .carousel-caption{
         bottom: 6rem;
     }
+    .code{
+        width: 200px;
+        height: 200px;
+    }
+
     .carousel-caption h5{
         font-weight: bold;
         font-size: 25px;
