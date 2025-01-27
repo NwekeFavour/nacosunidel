@@ -71,7 +71,7 @@
                         <img :src="Groupie" class=" d-block imgplaceholder" alt="img_carousel">
                         <div class="carousel-caption welcome d-block">
                             <h5>Welcome To NACOS UNIDEL</h5>
-                            <p class="text-dark">NACOS is a computing department in Bowen University that leverages on effective learning
+                            <p class="text-dark">NACOS is a computing Faculty community in UNIDEL that leverages on effective learning
                                 through advance technology and tools.
                             </p>
                         </div>
@@ -205,7 +205,7 @@
                         </div>
                         <div>
                             <!-- position -->
-                            <p class="m-0 presd">Nweke favour Samuel</p>
+                            <p class="m-0 presd">Nweke Favour Samuel</p>
                         </div>
                         <p class="m-0 text-center fw-semibold">President</p>
                     </div>
